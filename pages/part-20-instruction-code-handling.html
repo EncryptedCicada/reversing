@@ -2428,7 +2428,7 @@
                                 
                                 <h2 id="part-20---instruction-code-handling">Part 20 - Instruction Code Handling</h2>
 <p>For a complete table of contents of all the lessons please click below as it will give you a brief of each lesson in addition to the topics it will cover.&#xA0;<a href="https://github.com/mytechnotalent/Reverse-Engineering-Tutorial" target="_blank">https://github.com/mytechnotalent/Reverse-Engineering-Tutorial</a></p>
-<p>A CPU reads instruction codes that are stored in memory as each code set can contain one of more bytes of information that guide the processor to perform a very specific task. As each instruction code is read in from memory, any data needed for the instruction code is also stored and read into memory.</p>
+<p>A CPU reads instruction codes that are stored in memory and each code set can contain one or more bytes of information that guide the processor to perform a very specific task. As each instruction code is read in from memory, any data needed for the instruction code is also stored and read into memory.</p>
 <p>Keep in mind, memory that contain instruction codes are no different than the bytes that contain the data used by the CPU and special pointers are used to help the CPU keep track of where in memory data is and where instruction codes are stored.</p>
 <p>A data pointer helps the CPU keep track of where the data area in memory starts which is the stack. When new data elements are placed in the stack, the stack pointer moves down in memory and as data is read from the stack the stack pointer moves up in memory. Please review Part 15 &#x2013; Stack if you don&#x2019;t understand this concept.</p>
 <p>The instruction pointer is used to help the CPU keep track of which instruction codes have already been processed and what code is to be processed next. Please review Part 12 &#x2013; Instruction Pointer Register if you don&#x2019;t understand this concept.</p>
@@ -2440,7 +2440,7 @@
 <p>Lets compile and run this program.</p>
 <div class="slate-resizable-image-embed slate-image-embed__resize-full-width"><img src="../imgs/1520147571659.jpg"></div>
 
-<p>Lets use the objdump tool to and find the main function within it.</p>
+<p>Lets use the objdump tool and find the main function within it.</p>
 <div class="slate-resizable-image-embed slate-image-embed__resize-full-width"><img src="../imgs/1520190277217.jpg"></div>
 
 <p>Here is a snippet of the results you would get by running the above command.&#xA0;Here are the contents of the main function.&#xA0;Keep in mind the below is in Intel syntax as we spoke about in the last tutorial.</p>
