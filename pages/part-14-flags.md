@@ -8,7 +8,7 @@ What is important here is to take away the fact that flags help control, check a
 
 Flags are critical to assembly language applications as they are a check to verify each programs functions successful execution.
 
-We are dealing with 32-bit assembly to which a single 32-bit register which contains a group of status, control and system flags exist. This register is called the EFLAGS register as it contains 32 bits of information that are mapped to represent specific flags of information.
+We are dealing with 32-bit assembly in which a single 32-bit register which contains a group of status, control and system flags exist. This register is called the EFLAGS register as it contains 32 bits of information that are mapped to represent specific flags of information.
 
 There are three kinds of flags which are status flags, control flags and system flags.
 
@@ -78,7 +78,7 @@ The alignment check flag is used in conjunction with the AM bit in the CR0 contr
 
 The virtual interrupt flag replicates the IF flag when the processor is operating in virtual mode.
 
-The virtual interrupt pending flag is used when the processor is operating in virtual mode to indicate that n interrupt is pending.
+The virtual interrupt pending flag is used when the processor is operating in virtual mode to indicate that an interrupt is pending.
 
 The ID flag indicates whether the processor supports the CPUID instruction.
 
